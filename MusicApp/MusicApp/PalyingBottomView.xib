@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="nAW-RP-mJw" customClass="PalyingBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wrong_bg" translatesAutoresizingMaskIntoConstraints="NO" id="bNY-g5-3Ma">
+                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="4aq-VJ-9Ru"/>
+                        <constraint firstAttribute="width" constant="40" id="rcM-jg-2xd"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="漂泊的家" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYo-fw-axj">
+                    <rect key="frame" x="50" y="0.0" width="50" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="dJG-xL-RIv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="老狼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXq-3S-Gos">
+                    <rect key="frame" x="50" y="20" width="23" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="sE4-1J-zdL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PU8-yu-7Ew">
+                    <rect key="frame" x="335" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ITW-MY-Feq"/>
+                        <constraint firstAttribute="width" constant="40" id="VYL-oc-ZhC"/>
+                    </constraints>
+                    <state key="normal" image="bt_mv_playpage_control_next_press"/>
+                    <connections>
+                        <action selector="nextAction:" destination="nAW-RP-mJw" eventType="touchUpInside" id="UrA-ui-dQM"/>
+                    </connections>
+                </button>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="e95-vm-gL4">
+                    <rect key="frame" x="0.0" y="38" width="375" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="Tah-Ef-5pj"/>
+                    </constraints>
+                </progressView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhj-rQ-5Oh">
+                    <rect key="frame" x="285" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="Dox-JL-Ohc"/>
+                        <constraint firstAttribute="height" constant="40" id="jOP-gc-F5f"/>
+                    </constraints>
+                    <state key="normal" image="bt_tabbar_midplay_play_button_press"/>
+                    <connections>
+                        <action selector="PlayBtnAction:" destination="nAW-RP-mJw" eventType="touchUpInside" id="HXv-jO-SwT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="bNY-g5-3Ma" firstAttribute="top" secondItem="nAW-RP-mJw" secondAttribute="top" id="3hF-kp-5Qq"/>
+                <constraint firstItem="PU8-yu-7Ew" firstAttribute="top" secondItem="nAW-RP-mJw" secondAttribute="top" id="5I2-3b-JTu"/>
+                <constraint firstAttribute="trailing" secondItem="e95-vm-gL4" secondAttribute="trailing" id="9oJ-cU-fUg"/>
+                <constraint firstAttribute="bottom" secondItem="Yhj-rQ-5Oh" secondAttribute="bottom" id="BKh-t3-Smb"/>
+                <constraint firstAttribute="bottom" secondItem="e95-vm-gL4" secondAttribute="bottom" id="Cyi-u9-6Gj"/>
+                <constraint firstAttribute="trailing" secondItem="PU8-yu-7Ew" secondAttribute="trailing" id="HZO-e4-T2h"/>
+                <constraint firstItem="PU8-yu-7Ew" firstAttribute="leading" secondItem="Yhj-rQ-5Oh" secondAttribute="trailing" constant="10" id="IMy-Y5-Inm"/>
+                <constraint firstAttribute="bottom" secondItem="bNY-g5-3Ma" secondAttribute="bottom" id="JRI-4r-E5x"/>
+                <constraint firstItem="bNY-g5-3Ma" firstAttribute="leading" secondItem="nAW-RP-mJw" secondAttribute="leading" id="Qdp-82-fq1"/>
+                <constraint firstItem="uYo-fw-axj" firstAttribute="top" secondItem="nAW-RP-mJw" secondAttribute="top" id="TUg-bQ-KgG"/>
+                <constraint firstAttribute="bottom" secondItem="fXq-3S-Gos" secondAttribute="bottom" id="Zua-N4-WQJ"/>
+                <constraint firstAttribute="bottom" secondItem="PU8-yu-7Ew" secondAttribute="bottom" id="mvg-lL-X3X"/>
+                <constraint firstItem="fXq-3S-Gos" firstAttribute="leading" secondItem="bNY-g5-3Ma" secondAttribute="trailing" constant="10" id="rQS-uP-7bh"/>
+                <constraint firstItem="uYo-fw-axj" firstAttribute="leading" secondItem="bNY-g5-3Ma" secondAttribute="trailing" constant="10" id="vxH-WF-smD"/>
+                <constraint firstItem="Yhj-rQ-5Oh" firstAttribute="top" secondItem="nAW-RP-mJw" secondAttribute="top" id="wza-2q-ZbI"/>
+                <constraint firstItem="e95-vm-gL4" firstAttribute="leading" secondItem="nAW-RP-mJw" secondAttribute="leading" id="xxv-Xv-bDP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="artworkIV" destination="bNY-g5-3Ma" id="1uK-sx-o8I"/>
+                <outlet property="authorLabel" destination="fXq-3S-Gos" id="BmG-JU-k8z"/>
+                <outlet property="playBtn" destination="Yhj-rQ-5Oh" id="q0b-0K-40A"/>
+                <outlet property="progressView" destination="e95-vm-gL4" id="V4i-dp-ykq"/>
+                <outlet property="titleLabel" destination="uYo-fw-axj" id="nPT-vI-h5X"/>
+                <outletCollection property="gestureRecognizers" destination="6kc-7T-iZH" appends="YES" id="u7U-gD-F1S"/>
+            </connections>
+            <point key="canvasLocation" x="-595" y="-157"/>
+        </view>
+        <tapGestureRecognizer id="6kc-7T-iZH">
+            <connections>
+                <action selector="tapAction:" destination="nAW-RP-mJw" id="EiV-8w-m6L"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="bt_mv_playpage_control_next_press" width="41" height="46"/>
+        <image name="bt_tabbar_midplay_play_button_press" width="60" height="60"/>
+        <image name="wrong_bg" width="320" height="282"/>
+    </resources>
+</document>
