@@ -57,12 +57,15 @@
 		954744AA1EF51E25004870B1 /* ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 954744A91EF51E25004870B1 /* ViewUtils.m */; };
 		957ACFF31EF3D0C20095792C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 957ACFF21EF3D0C20095792C /* main.m */; };
 		957ACFF61EF3D0C20095792C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 957ACFF51EF3D0C20095792C /* AppDelegate.m */; };
-		957ACFF91EF3D0C20095792C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 957ACFF81EF3D0C20095792C /* ViewController.m */; };
 		957ACFFC1EF3D0C20095792C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 957ACFFA1EF3D0C20095792C /* Main.storyboard */; };
 		957ACFFE1EF3D0C20095792C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 957ACFFD1EF3D0C20095792C /* Assets.xcassets */; };
 		957AD0011EF3D0C20095792C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 957ACFFF1EF3D0C20095792C /* LaunchScreen.storyboard */; };
 		957AD00C1EF3D0C20095792C /* MusicAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 957AD00B1EF3D0C20095792C /* MusicAppTests.m */; };
 		957AD0171EF3D0C20095792C /* MusicAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 957AD0161EF3D0C20095792C /* MusicAppUITests.m */; };
+		959FB6421EF79A450029963F /* BangDanDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 959FB6411EF79A450029963F /* BangDanDetailModel.m */; };
+		959FB6481EF7DA0D0029963F /* ResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959FB6471EF7DA0D0029963F /* ResultsTableViewController.m */; };
+		959FFF111EF8ECA70055C859 /* SongsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 959FFF0F1EF8ECA70055C859 /* SongsListCell.m */; };
+		959FFF121EF8ECA70055C859 /* SongsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 959FFF101EF8ECA70055C859 /* SongsListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,8 +186,6 @@
 		957ACFF21EF3D0C20095792C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		957ACFF41EF3D0C20095792C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		957ACFF51EF3D0C20095792C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		957ACFF71EF3D0C20095792C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		957ACFF81EF3D0C20095792C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		957ACFFB1EF3D0C20095792C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		957ACFFD1EF3D0C20095792C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		957AD0001EF3D0C20095792C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -195,6 +196,13 @@
 		957AD0121EF3D0C20095792C /* MusicAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		957AD0161EF3D0C20095792C /* MusicAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicAppUITests.m; sourceTree = "<group>"; };
 		957AD0181EF3D0C20095792C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		959FB6401EF79A450029963F /* BangDanDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BangDanDetailModel.h; sourceTree = "<group>"; };
+		959FB6411EF79A450029963F /* BangDanDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BangDanDetailModel.m; sourceTree = "<group>"; };
+		959FB6461EF7DA0D0029963F /* ResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsTableViewController.h; sourceTree = "<group>"; };
+		959FB6471EF7DA0D0029963F /* ResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsTableViewController.m; sourceTree = "<group>"; };
+		959FFF0E1EF8ECA70055C859 /* SongsListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongsListCell.h; sourceTree = "<group>"; };
+		959FFF0F1EF8ECA70055C859 /* SongsListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongsListCell.m; sourceTree = "<group>"; };
+		959FFF101EF8ECA70055C859 /* SongsListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SongsListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +287,7 @@
 		950372121EF3D90000338F10 /* 榜单 */ = {
 			isa = PBXGroup;
 			children = (
+				959FFF0D1EF8EC9A0055C859 /* View */,
 			);
 			name = "榜单";
 			sourceTree = "<group>";
@@ -292,6 +301,8 @@
 				954744341EF4D300004870B1 /* SearchTableViewController.h */,
 				954744351EF4D300004870B1 /* SearchTableViewController.m */,
 				954744361EF4D300004870B1 /* SearchTableViewController.xib */,
+				959FB6461EF7DA0D0029963F /* ResultsTableViewController.h */,
+				959FB6471EF7DA0D0029963F /* ResultsTableViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -311,6 +322,8 @@
 			children = (
 				954744711EF4DF9A004870B1 /* SongsInfo.h */,
 				954744721EF4DF9A004870B1 /* SongsInfo.m */,
+				959FB6401EF79A450029963F /* BangDanDetailModel.h */,
+				959FB6411EF79A450029963F /* BangDanDetailModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -565,8 +578,6 @@
 				9503720C1EF3D8D100338F10 /* 我的 */,
 				957ACFF41EF3D0C20095792C /* AppDelegate.h */,
 				957ACFF51EF3D0C20095792C /* AppDelegate.m */,
-				957ACFF71EF3D0C20095792C /* ViewController.h */,
-				957ACFF81EF3D0C20095792C /* ViewController.m */,
 				957ACFF11EF3D0C20095792C /* Supporting Files */,
 			);
 			path = MusicApp;
@@ -602,6 +613,16 @@
 				957AD0181EF3D0C20095792C /* Info.plist */,
 			);
 			path = MusicAppUITests;
+			sourceTree = "<group>";
+		};
+		959FFF0D1EF8EC9A0055C859 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				959FFF0E1EF8ECA70055C859 /* SongsListCell.h */,
+				959FFF0F1EF8ECA70055C859 /* SongsListCell.m */,
+				959FFF101EF8ECA70055C859 /* SongsListCell.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -723,6 +744,7 @@
 				957ACFFC1EF3D0C20095792C /* Main.storyboard in Resources */,
 				954744061EF4B50E004870B1 /* MineViewController.xib in Resources */,
 				954744831EF5029D004870B1 /* CenterView.xib in Resources */,
+				959FFF121EF8ECA70055C859 /* SongsListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,7 +773,6 @@
 				9547446B1EF4DF7A004870B1 /* JSONModelError.m in Sources */,
 				954744A11EF511D3004870B1 /* UIImageView+AFNetworking.m in Sources */,
 				9547440C1EF4BFED004870B1 /* MineHeaderView.m in Sources */,
-				957ACFF91EF3D0C20095792C /* ViewController.m in Sources */,
 				9547447F1EF50276004870B1 /* CenterView.m in Sources */,
 				9547447C1EF50263004870B1 /* PlayingView.m in Sources */,
 				9547446C1EF4DF7A004870B1 /* JSONAPI.m in Sources */,
@@ -773,9 +794,12 @@
 				954744701EF4DF7A004870B1 /* JSONValueTransformer.m in Sources */,
 				9547449C1EF511D3004870B1 /* AFAutoPurgingImageCache.m in Sources */,
 				954744A21EF511D3004870B1 /* UIProgressView+AFNetworking.m in Sources */,
+				959FB6421EF79A450029963F /* BangDanDetailModel.m in Sources */,
 				954744AA1EF51E25004870B1 /* ViewUtils.m in Sources */,
 				9547444C1EF4D6A1004870B1 /* AFSecurityPolicy.m in Sources */,
+				959FFF111EF8ECA70055C859 /* SongsListCell.m in Sources */,
 				954744051EF4B50E004870B1 /* MineViewController.m in Sources */,
+				959FB6481EF7DA0D0029963F /* ResultsTableViewController.m in Sources */,
 				9547446F1EF4DF7A004870B1 /* JSONKeyMapper.m in Sources */,
 				9547446A1EF4DF7A004870B1 /* JSONModelClassProperty.m in Sources */,
 				954744231EF4CA49004870B1 /* WMPageController.m in Sources */,

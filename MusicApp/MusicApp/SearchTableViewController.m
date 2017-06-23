@@ -8,6 +8,7 @@
 
 #import "SearchTableViewController.h"
 #import "SongsInfo.h"
+#import "ResultsTableViewController.h"
 @interface SearchTableViewController ()<UISearchBarDelegate>
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (nonatomic,strong) NSArray *songs;
@@ -64,7 +65,13 @@
     return cell;
 }
 
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    ResultsTableViewController *vc = [[ResultsTableViewController alloc]init];
+    SongsInfo *si = self.songs[indexPath.row];
+    vc.name = si.songname;
+    [self.navigationController pushViewController:vc animated:YES];
+    
+    }
 
 
 @end

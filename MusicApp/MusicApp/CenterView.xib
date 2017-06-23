@@ -12,14 +12,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="ZoZ-au-mRd" customClass="CenterView">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="440"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="355"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b24-Mn-17b">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="374"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="289"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vn0-PO-81N">
-                    <rect key="frame" x="10" y="384" width="42" height="20"/>
+                    <rect key="frame" x="10" y="299" width="42" height="20"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="TQ6-Rh-Spa"/>
                     </constraints>
@@ -28,27 +28,27 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eX-8B-uLd">
-                    <rect key="frame" x="10" y="409" width="42" height="21"/>
+                    <rect key="frame" x="10" y="324" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wu-ib-6a8">
-                    <rect key="frame" x="249" y="385" width="40" height="40"/>
+                    <rect key="frame" x="194" y="300" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="40" id="ttt-P3-RUF"/>
                         <constraint firstAttribute="height" constant="40" id="xyY-a7-TWo"/>
                     </constraints>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfo-wR-aof">
-                    <rect key="frame" x="325" y="385" width="40" height="40"/>
+                    <rect key="frame" x="270" y="300" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="Zdb-JQ-y8T"/>
                         <constraint firstAttribute="width" constant="40" id="nga-HM-ktU"/>
                     </constraints>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWJ-Fz-YuU">
-                    <rect key="frame" x="179" y="385" width="40" height="40"/>
+                    <rect key="frame" x="124" y="300" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="5eJ-0O-Pjv"/>
                         <constraint firstAttribute="width" constant="40" id="Kul-MI-H0o"/>
@@ -82,7 +82,7 @@
                 <outlet property="suthorLabel" destination="7eX-8B-uLd" id="jEh-tc-K3J"/>
                 <outlet property="titleLabel" destination="Vn0-PO-81N" id="tnF-ew-hYr"/>
             </connections>
-            <point key="canvasLocation" x="108.5" y="-125"/>
+            <point key="canvasLocation" x="-60" y="-245.5"/>
         </view>
     </objects>
     <resources>

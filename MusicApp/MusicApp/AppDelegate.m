@@ -10,6 +10,9 @@
 #import "DynamicTableViewController.h"
 #import "MusicPageController.h"
 #import "MineViewController.h"
+#import "PlayingView.h"
+#import "PalyingBottomView.h"
+#import <AVFoundation/AVFoundation.h>
 @interface AppDelegate ()
 
 @end
@@ -30,6 +33,19 @@
     self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:pageController];
     [self.window makeKeyAndVisible];
     
+    
+    PalyingBottomView *pv = [[NSBundle mainBundle]loadNibNamed:@"PalyingBottomView" owner:self options:nil].firstObject;
+    pv.width = kSW;
+    pv.top = kSH - pv.height;
+    [self.window addSubview:pv];
+    PlayingView *pvs = [PlayingView shareView];
+    pvs.frame = self.window.bounds;
+    pvs.top = kSH;
+    pvs.width = kSW;
+    pvs.playingBpttomView = pv;
+    [self.window addSubview:pvs];
+    
+    
     // Override point for customization after application launch.
     return YES;
 }
@@ -42,6 +58,9 @@
 
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    [session setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
+    [session setActive:YES error:nil];
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }

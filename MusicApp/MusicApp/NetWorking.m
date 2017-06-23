@@ -20,4 +20,26 @@
         callback(error);
     }];
 }
++(void)getGetObjFromNetWorkWithPagram:(NSDictionary *)paragrm andURL:(NSString *)url andCompletion:(MyCallBack)callback{
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager setResponseSerializer:[AFHTTPResponseSerializer serializer]];
+    [manager GET:url parameters:paragrm progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
+        callback(dic);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        callback(error);
+    }];
+
+}
+
+
+
+
+
+
+
+
+
+
+
 @end

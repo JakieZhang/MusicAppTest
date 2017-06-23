@@ -7,7 +7,7 @@
 //
 
 #import "PalyingBottomView.h"
-
+#import "PlayingView.h"
 @implementation PalyingBottomView
 
 /*
@@ -19,11 +19,20 @@
 */
 
 - (IBAction)tapAction:(id)sender {
+    [[PlayingView shareView]show];
 }
 
 - (IBAction)nextAction:(id)sender {
 }
 
-- (IBAction)PlayBtnAction:(id)sender {
+- (IBAction)PlayBtnAction:(UIButton *)sender {
+    if ([PlayingView shareView].isPlaying) {
+        [[PlayingView shareView].player pause];
+        sender.selected = [PlayingView shareView].playorpauseBtn.selected = NO;
+    }else{
+        [[PlayingView shareView].player play];
+        sender.selected = [PlayingView shareView].playorpauseBtn.selected = YES;
+    }
+    
 }
 @end

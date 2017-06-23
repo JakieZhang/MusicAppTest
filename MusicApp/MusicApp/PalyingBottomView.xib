@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -69,7 +69,7 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.89404219389999995" green="0.8941677213" blue="0.89400249720000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <gestureRecognizers/>
             <constraints>
                 <constraint firstItem="bNY-g5-3Ma" firstAttribute="top" secondItem="nAW-RP-mJw" secondAttribute="top" id="3hF-kp-5Qq"/>
@@ -98,7 +98,7 @@
                 <outlet property="titleLabel" destination="uYo-fw-axj" id="nPT-vI-h5X"/>
                 <outletCollection property="gestureRecognizers" destination="6kc-7T-iZH" appends="YES" id="u7U-gD-F1S"/>
             </connections>
-            <point key="canvasLocation" x="-595" y="-157"/>
+            <point key="canvasLocation" x="-477.5" y="-151"/>
         </view>
         <tapGestureRecognizer id="6kc-7T-iZH">
             <connections>

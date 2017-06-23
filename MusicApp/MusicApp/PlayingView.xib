@@ -31,22 +31,31 @@
                             <state key="normal">
                                 <color key="titleColor" red="0.96855336430000005" green="0.96866911649999998" blue="0.96851390599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <connections>
+                                <action selector="musicControlAction:" destination="sas-ea-K0u" eventType="touchUpInside" id="5K3-iz-2u8"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ty1-n4-HCl">
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ty1-n4-HCl">
                             <rect key="frame" x="57" y="55" width="40" height="40"/>
                             <color key="backgroundColor" red="0.20486003159999999" green="0.72142285110000004" blue="0.68251448869999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="U48-Xi-A4R"/>
                                 <constraint firstAttribute="width" constant="40" id="ziP-j4-PM6"/>
                             </constraints>
+                            <connections>
+                                <action selector="musicControlAction:" destination="sas-ea-K0u" eventType="touchUpInside" id="4SN-yz-vAU"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4U-fG-Sll">
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4U-fG-Sll">
                             <rect key="frame" x="277" y="55" width="40" height="40"/>
                             <color key="backgroundColor" red="0.20486003159999999" green="0.72142285110000004" blue="0.68251448869999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="40" id="DGA-wJ-RfI"/>
                                 <constraint firstAttribute="height" constant="40" id="rW2-Rb-Fji"/>
                             </constraints>
+                            <connections>
+                                <action selector="musicControlAction:" destination="sas-ea-K0u" eventType="touchUpInside" id="W4a-sS-NFk"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -160,9 +169,6 @@
                 <outlet property="progressSlider" destination="dWu-Iy-HFJ" id="4aM-Of-Fni"/>
                 <outlet property="progressView" destination="WUY-xM-wt4" id="K4j-xr-xDK"/>
                 <outlet property="topView" destination="wWF-m4-Lop" id="CCP-Yx-mV4"/>
-                <outletCollection property="musicControlAction" destination="ofd-FG-ZdD" id="NR2-58-LEk"/>
-                <outletCollection property="musicControlAction" destination="i4U-fG-Sll" id="xJj-wh-pBe"/>
-                <outletCollection property="musicControlAction" destination="Ty1-n4-HCl" id="OIj-Z6-9n6"/>
             </connections>
             <point key="canvasLocation" x="-268.5" y="78.5"/>
         </view>

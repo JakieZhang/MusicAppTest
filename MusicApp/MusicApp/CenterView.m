@@ -19,5 +19,6 @@
 }
 
 - (IBAction)downloadAction:(id)sender {
+    [[PlayingView shareView] downloadMusic];
 }
 @end

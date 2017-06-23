@@ -11,6 +11,7 @@
 #import "SongModel.h"
 #import "CenterView.h"
 #import "PalyingBottomView.h"
+#import "BangDanDetailModel.h"
 @interface PlayingView : UIView<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UIButton *playorpauseBtn;
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
@@ -22,8 +23,11 @@
 @property (weak, nonatomic) IBOutlet UIButton *backAction;
 - (IBAction)BackAction:(id)sender;
 - (IBAction)sliderAction:(id)sender;
-@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *musicControlAction;
 
+- (IBAction)musicControlAction:(id)sender;
+
+
+@property(nonatomic,strong)BangDanDetailModel *song;
 @property(nonatomic,strong)AVPlayer *player;
 @property(nonatomic,strong)NSArray *songs;
 @property(nonatomic,strong)SongModel *songDetail;

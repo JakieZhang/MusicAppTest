@@ -10,4 +10,6 @@
 typedef void (^MyCallBack)(id obj);
 @interface NetWorking : NSObject
 +(void)getObjFromNetWorkWithPagram:(NSDictionary *)paragrm andURL:(NSString *)url andCompletion:(MyCallBack)callback;
+
++(void)getGetObjFromNetWorkWithPagram:(NSDictionary *)paragrm andURL:(NSString *)url andCompletion:(MyCallBack)callback;
 @end
